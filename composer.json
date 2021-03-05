@@ -9,7 +9,7 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit test --color",
+        "test": "vendor/bin/phpunit test --color --columns 124 -v",
         "sniff": "./vendor/bin/phpcs src && ./vendor/bin/phpcbf src"
     }
 }
