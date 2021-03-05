@@ -25,6 +25,11 @@ class RomanNumerals
 
   public static function generate($number)
   {
+    if ($number < 1 || $number > 3999)
+    {
+      return false;  
+    }
+
     $result =  '';
 
     foreach (static::NUMERALS as $numeral => $arabic)

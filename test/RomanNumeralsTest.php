@@ -15,6 +15,18 @@ class RomanNumeralsTest extends testCase
     $this->assertEquals($expexted, RomanNumerals::generate($number));
   }
 
+  /** @test */
+  function it_should_return_false_if_number_less_then_1()
+  {
+    $this->assertFalse(RomanNumerals::generate(0));
+  }
+
+  /** @test */
+  function it_should_return_false_if_number_greater_then_3999()
+  {
+    $this->assertFalse(RomanNumerals::generate(4000));
+  }
+
   function checks()
   {
     return [
