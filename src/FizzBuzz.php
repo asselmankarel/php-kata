@@ -4,7 +4,7 @@ namespace App;
 
 class FizzBuzz
 {
-  public static function convert(int $number): string
+  public static function convert(int $number)
   {
     $result = '';
 
@@ -18,6 +18,6 @@ class FizzBuzz
       $result .= 'buzz';
     }
 
-    return $result;
+    return $result ?: $number;
   }
 }

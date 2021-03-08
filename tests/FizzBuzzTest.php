@@ -33,4 +33,13 @@ class FizzBuzzTest extends TestCase
      }
    }
 
+      /** @test */
+      function it_returns_the_number_if_not_divisable_by_three_and_five()
+      {
+        foreach([1,2,4,7,11] as $number)
+        {
+          $this->assertEquals($number, FizzBuzz::convert($number));
+        }
+      }
+
 }
